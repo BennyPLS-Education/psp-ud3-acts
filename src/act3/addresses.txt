@@ -1,0 +1,6 @@
+{
+  "address": "a",
+  "city": "a",
+  "postalCode": "a",
+  "houseNumber": "a"
+}
