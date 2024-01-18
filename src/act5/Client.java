@@ -7,6 +7,9 @@ import java.io.PrintWriter;
 import java.net.Socket;
 import java.util.Scanner;
 
+import static act5.Main.PORT;
+import static act5.Main.HOST;
+
 public class Client extends Thread {
     private final String host;
     private final int port;
@@ -48,5 +51,11 @@ public class Client extends Thread {
         } catch (IOException e) {
             System.out.println("Error Client: " + e.getMessage());
         }
+    }
+
+    public static void main(String[] args) {
+        Client client = new Client(HOST, PORT);
+
+        client.start();
     }
 }

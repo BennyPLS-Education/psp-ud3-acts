@@ -1,8 +1,8 @@
 package act4;
 
 public class Main {
-    private final static int PORT = 2000;
-    private final static String HOST = "localhost";
+    public final static int PORT = 2000;
+    public final static String HOST = "localhost";
 
     public static void main(String[] args) {
         Server server = new Server(PORT);
